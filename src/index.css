@@ -2,9 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'AcuminVariableConcept', sans-serif;
+}
+
+@font-face {
+  font-family: 'AcuminVariableConcept';
+  src: url(./fonts/AcuminVariableConcept.otf);
 }
 
 body {
   background-size: cover;
   background-position: center;
+  background-image: url(./assets/background.png);
+}
+
+.sc-gsTCUz{
+  transform: scale(1.3) !important;
+  margin-top: 35px;
+  margin-bottom: 60px;
 }

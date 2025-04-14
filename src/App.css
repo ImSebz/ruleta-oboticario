@@ -11,21 +11,46 @@
   overflow: hidden;
 }
 
+.roulette-container .wheel-segment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.roulette-container .wheel-segment img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
 .roulette-container button {
   padding: 10px 20px;
-  background-color: #000;
+  background-color: #f8dbe0;
   border: none;
-  color: #fff;
+  color: #817150;
   font-family: 'Gatorade-Black';
   font-size: 1.5rem;
   cursor: pointer;
   border-radius: 10px;
-  transition: all 0.6s;
+  transition: all 0.2s;
 }
 
 .roulette-container button:hover {
-  background-color: #FF6B00;
-  color: #000;
+  background-color: #d4e6c9;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+
+.title img {
+  width: 100%;
+  max-width: 700px;
 }
 
 .random-number {
@@ -38,14 +63,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 20%;
   gap: 20px;
   top: 50%;
   left: 50%;
   right: auto;
   bottom: auto;
   transform: translate(-50%, -50%);
-  background: #000;
-  color: #fff;
+  background: #d4e6c9;
+  color: #817150;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -74,9 +100,9 @@
 
 .modal button {
   padding: 10px 20px;
-  background-color: #FF6B00;
+  background-color: #6fa487;
   border: none;
-  color: #fff;
+  color: #000;
   font-family: 'Gatorade-Black';
   font-size: 1.2rem;
   cursor: pointer;
@@ -85,7 +111,7 @@
 }
 
 .modal button:hover {
-  background-color: #fff;
+  background-color: #f8dbe0;
   color: #000;
 }
 
