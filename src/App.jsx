@@ -5,19 +5,24 @@ import Modal from 'react-modal';
 import title from './assets/title.png';
 import pointer from './assets/pointer.png';
 import bono50 from './assets/bono_50_mil.png';
+import bono50_2 from './assets/bono_50_mil_white.png';
 import ramo_de_flores from './assets/ramo_de_flores.png';
+import kit_de_muestras from './assets/kit_de_muestras.png';
+import kit_de_muestras_2 from './assets/kit_de_muestras_white.png';
 import spa_de_manos from './assets/spa_de_manos.png';
 
 const data = [
-  { option: 'bono50', image: { uri: bono50, sizeMultiplier: 1.2 }, alt: "Bono 50 mil" },
-  { option: 'ramo_de_flores', image: { uri: ramo_de_flores, sizeMultiplier: 1.2 }, alt: "Ramo de flores" },
   { option: 'spa_de_manos', image: { uri: spa_de_manos, sizeMultiplier: 1.2 }, alt: "Spa de manos" },
   { option: 'bono50', image: { uri: bono50, sizeMultiplier: 1.2 }, alt: "Bono 50 mil" },
+  { option: 'kit_de_muestras_2', image: { uri: kit_de_muestras_2, sizeMultiplier: 1.2 }, alt: "Kit de Muestras", originalImage: kit_de_muestras },
+  { option: 'bono50_2', image: { uri: bono50, sizeMultiplier: 1.2 }, alt: "Bono 50 mil", originalImage: bono50 },
   { option: 'ramo_de_flores', image: { uri: ramo_de_flores, sizeMultiplier: 1.2 }, alt: "Ramo de flores" },
-  { option: 'spa_de_manos', image: { uri: spa_de_manos, sizeMultiplier: 1.2 }, alt: "Spa de manos" },
-  { option: 'bono50', image: { uri: bono50, sizeMultiplier: 1.2 }, alt: "Bono 50 mil" },
+  { option: 'bono50', image: { uri: bono50_2, sizeMultiplier: 1.2 }, alt: "Bono 50 mil" },
+  { option: 'kit_de_muestras', image: { uri: kit_de_muestras, sizeMultiplier: 1.2 }, alt: "Kit de Muestras" },
   { option: 'ramo_de_flores', image: { uri: ramo_de_flores, sizeMultiplier: 1.2 }, alt: "Ramo de flores" },
 ];
+
+
 
 Modal.setAppElement('#root');
 
@@ -72,20 +77,20 @@ function App() {
           Girar la Ruleta
         </button>
         <Modal
-          isOpen={isModalOpen}
-          onRequestClose={closeModal}
-          contentLabel="Premio Ganado"
-          className="modal"
-          overlayClassName="overlay"
-        >
-          <h2 className='modal-h2'>Premio Ganado</h2>
-          <img
-            src={data[prizeNumber].image.uri} // Usa la propiedad `image.uri` para mostrar la imagen
-            alt={data[prizeNumber].alt} // Usa la propiedad `alt` para el texto alternativo
-            style={{ width: '100%', height: 'auto' }} // Ajusta el tamaño de la imagen
-          />
-          <button onClick={closeModal}>Cerrar</button>
-        </Modal>
+  isOpen={isModalOpen}
+  onRequestClose={closeModal}
+  contentLabel="Premio Ganado"
+  className="modal"
+  overlayClassName="overlay"
+>
+  <h2 className='modal-h2'>Premio Ganado</h2>
+  <img
+    src={data[prizeNumber].originalImage || data[prizeNumber].image.uri}
+    alt={data[prizeNumber].alt} 
+    style={{ width: '100%', height: 'auto' }} 
+  />
+  <button onClick={closeModal}>Cerrar</button>
+</Modal>
       </div>
     </>
   );
