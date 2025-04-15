@@ -6,12 +6,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   flex-direction: column;
   gap: 20px;
   color: #fff;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .roulette-container .wheel-segment {
@@ -47,13 +49,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
-  margin-top: -2rem;
 }
 
 .title img {
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .random-number {
@@ -66,7 +66,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 20%;
+  width: 100%;
+  max-width: 450px;
   gap: 20px;
   top: 50%;
   left: 50%;
@@ -117,47 +118,8 @@
 
 .modal img {
   width: 100%;
-  max-width: 250px;
+  max-width: 230px;
 }
 
-/* Laptop ONLY media query */
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .roulette-container {
-    gap: 10px;
-  }
 
-  .city-selector {
-    gap: 30px;
-  }
-
-  .city-selector label {
-    font-size: 2.4rem;
-  }
-
-  .city-select-input {
-    padding: 10px 25px;
-    font-size: 1.4rem;
-  }
-
-  .random-number {
-    font-size: 2.2rem;
-  }
-
-  .modal {
-    padding: 30px;
-  }
-
-  .modal-h2 {
-    font-size: 2rem;
-  }
-
-  .modal-number {
-    font-size: 2rem;
-  }
-
-  .modal button {
-    padding: 15px 30px;
-    font-size: 1.4rem;
-  }
-}
