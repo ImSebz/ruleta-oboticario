@@ -11,21 +11,8 @@
   width: 100%;
   flex-direction: column;
   gap: 20px;
-  color: #fff;
   overflow: hidden;
   margin-bottom: 10px;
-}
-
-.roulette-container .wheel-segment {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.roulette-container .wheel-segment img {
-  max-width: 80%;
-  max-height: 80%;
 }
 
 .roulette-container button {
@@ -33,7 +20,7 @@
   background-color: #817150;
   border: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
   border-radius: 10px;
   transition: all 0.2s;
@@ -52,8 +39,7 @@
 }
 
 .title img {
-  width: 100%;
-  max-width: 500px;
+  width: 25%;
 }
 
 .random-number {
@@ -67,8 +53,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 450px;
-  gap: 20px;
+  max-width: 290px;
   top: 50%;
   left: 50%;
   right: auto;
@@ -93,7 +78,7 @@
 }
 
 .modal-h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .modal-number {
@@ -105,7 +90,7 @@
   background-color: #817150;
   border: none;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   border-radius: 10px;
   transition: all 0.6s;
@@ -117,8 +102,7 @@
 }
 
 .modal img {
-  width: 100%;
-  max-width: 230px;
+  width: 70% !important;
 }
 
 
